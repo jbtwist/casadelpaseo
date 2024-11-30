@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import { Carousel } from "flowbite-react";
+import {Carousel} from 'flowbite-react';
 
 function SlideShow({id, images, desc}){
-    const [idx, setIdx] = useState(0);
+  const [idx, setIdx] = useState(0);
 
   function onSlideChange(index) {
     setIdx(index);
@@ -23,15 +23,5 @@ function SlideShow({id, images, desc}){
     </section>
   );
 };
-
-function Container ({url}) {
-    return (
-    <>
-        <div className="each-slide-effect">
-            <div style={{ 'backgroundImage': `url(${url})` }}/>
-        </div>
-    </>
-    )
-}
 
 export default SlideShow;

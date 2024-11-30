@@ -1,29 +1,28 @@
-const webpack = require('webpack');
-const path = require('path');
+const path = require('path')
 
 const config = {
 
   mode: 'development',
-  entry: '/src/index.js',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'build/static/dist'),
+    filename: 'bundle.js'
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
   watch: true,
   cache: false,
-  output: {
-    path: path.resolve(__dirname, 'build/static/dist'),
-    filename: 'bundle.js'
-  },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-react']
-            }
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react']
+          }
         }
       },
       {
@@ -56,6 +55,6 @@ const config = {
       }
     ]
   }
-};
+}
 
-module.exports = config;
+module.exports = config

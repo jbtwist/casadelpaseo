@@ -1,15 +1,17 @@
-import React from "react";
-import { Navbar } from "flowbite-react";
+import React from 'react';
+import {Navbar} from 'flowbite-react';
 
 
 function StickyMenu() {
 
   return (
-
     <Navbar fluid rounded className="sticky top-0 z-50">
       <Navbar.Brand href="#">
         <img src="/favicon.svg" className="mr-3 h-6 lg:h-9" alt="Icon" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">La casa del paseo</span>
+        <span className="self-center whitespace-nowrap text-xl font-semibold
+                       dark:text-white">
+          La casa del paseo
+        </span>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>

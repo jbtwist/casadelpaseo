@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-const path = require('path');
+const path = require('path')
 
 const config = {
 
@@ -20,10 +19,10 @@ const config = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-react']
-            }
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react']
+          }
         }
       },
       {
@@ -56,6 +55,6 @@ const config = {
       }
     ]
   }
-};
+}
 
-module.exports = config;
+module.exports = config

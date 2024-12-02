@@ -1,5 +1,6 @@
 import React from 'react';
 import SlideShow from './SlideShow';
+import CheckAvailability from './CheckAvailability';
 
 function Section({title, titleDesc, images, desc}) {
   return (
@@ -17,15 +18,25 @@ function Section({title, titleDesc, images, desc}) {
 function SectionTitle({title, desc}) {
   return (
     <section className="py-8 lg:py-12 px-4 lg:px-6
-                      bg-gray-100"
+                      bg-gray-100
+                        text-left"
     >
-      <h2 className="text-2xl lg:text-3xl md:text-4xl
-                     font-bold text-gray-800 text-center
-                     border-b-4 border-blue-500
-                     inline-block pb-2 max-w-full"
-      >
-        {title}
-      </h2>
+      <div className='flex justify-between'>
+        <h2 className="text-2xl lg:text-3xl md:text-4xl
+                       font-bold text-gray-800 text-center
+                       border-b-4 border-blue-500
+                       inline-block pb-2 max-w-full"
+        >
+          {title}
+        </h2>
+        <div className='border-1 border-black rounded bg-white'>
+          <CheckAvailability
+            url={'https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'}
+            icon="/media/Booking.svg"
+            alt="Check availability at Booking"
+          />
+        </div>
+      </div>
       <p className="mt-6
                   text-gray-600 text-lg lg:text-base leading-relaxed
                     max-w-prose mx-auto"

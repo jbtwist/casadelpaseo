@@ -65,6 +65,30 @@ function App () {
         src='/media/activities/castle.jpg'
         url='https://www.laencinaturismo.com/rutas/visita-guiada-castillo-de-banos-de-la-encina/'
       />
+      <ActivitySection
+        title={t('camarinVisitTitle')}
+        titleDesc={[t('camarinVisitDesc')]}
+        src='/media/activities/camarin.jpg'
+        url='https://www.laencinaturismo.com/rutas/del-medievo-al-barroco/'
+      />
+      <ActivitySection
+        title={t('sanctuaryTitle')}
+        titleDesc={[t('sanctuaryDesc')]}
+        src='/media/activities/sanctuary.jpg'
+        url='https://www.laencinaturismo.com/rutas/santuario-de-la-virgen-de-la-encina/'
+      />
+      <ActivitySection
+        title={t('penalosaTitle')}
+        titleDesc={[t('penalosaDesc')]}
+        src='/media/activities/penalosa.jpg'
+        url='https://www.laencinaturismo.com/rutas/penalosa-un-viaje-al-pasado/'
+      />
+      <ActivitySection
+        title={t('kayakTitle')}
+        titleDesc={[t('kayakDesc')]}
+        src='/media/activities/kayak.jpg'
+        url='https://www.laencinaturismo.com/rutas/ruta-en-piragua-por-el-rumblar/'
+      />
     </section>
   )
 }

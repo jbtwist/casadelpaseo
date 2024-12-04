@@ -1,12 +1,13 @@
 import React from 'react'
+import BarSection from './components/BarSection'
 import HouseSection from './components/HouseSection'
 import StickyMenu from './components/stickyMenu'
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 import './App.css'
 import './i18n'
 
 function App () {
-  const {t} = useTranslation();
+  const { t } = useTranslation()
 
   const imagesPaseo = [
     'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
@@ -34,14 +35,18 @@ function App () {
 
   const paseoBookingUrl = 'https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
 
-  const titleCurro = 'La casa del tito curro'
+  const imagesMeson = [
+    '/media/meson/icon.jpg',
+    '/media/meson/principal.jpg',
+    '/media/meson/flamenquin.jpg',
+    '/media/meson/escalopin.jpg',
+    '/media/meson/cucharro.jpg',
+    '/media/meson/gambas.jpg',
+    '/media/meson/huevos.jpg',
+    '/media/meson/tarta_queso.jpg'
+  ]
 
-  const descCurro = `Descubre el encanto de nuestra casa rural, un refugio
-    perfecto rodeado de naturaleza. Disfruta de cómodas habitaciones, vistas
-    espectaculares y espacios acogedores ideales para desconectar y relajarte.
-    Ubicada a pocos minutos de rutas de senderismo, ríos y paisajes únicos,
-    nuestra casa te invita a vivir una experiencia inolvidable en plena
-    tranquilidad.`
+  const imagesDescMeson = ['Slide 1', 'Slide 2', 'Slide 3']
 
   return (
     <section>
@@ -53,11 +58,11 @@ function App () {
         desc={imagesDescPaseo}
         url={paseoBookingUrl}
       />
-      <HouseSection
-        title={titleCurro}
-        titleDesc={descCurro}
-        images={imagesPaseo}
-        desc={imagesDescPaseo}
+      <BarSection
+        title={t('mesonTitle')}
+        titleDesc={t('mesonDesc')}
+        images={imagesMeson}
+        desc={imagesDescMeson}
       />
     </section>
   )

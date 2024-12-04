@@ -1,4 +1,5 @@
 import React from 'react'
+import ActivitySection from './components/ActivitiesSection'
 import BarSection from './components/BarSection'
 import HouseSection from './components/HouseSection'
 import StickyMenu from './components/stickyMenu'
@@ -8,13 +9,11 @@ import './i18n'
 
 function App () {
   const { t } = useTranslation()
-
   const imagesPaseo = [
     'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
     'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
     'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
   ]
-
   const imagesDescPaseo = [
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl
      ante, pretium a mollis id, fermentum sed arcu. Fusce vel pulvinar urna,
@@ -32,9 +31,6 @@ function App () {
      massa. Nunc maximus mattis laoreet. Proin vel semper urna. Vivamus mollis
      eros lorem, sit amet volutpat metus molestie vitae.`
   ]
-
-  const paseoBookingUrl = 'https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
-
   const imagesMeson = [
     '/media/meson/icon.jpg',
     '/media/meson/principal.jpg',
@@ -45,7 +41,6 @@ function App () {
     '/media/meson/huevos.jpg',
     '/media/meson/tarta_queso.jpg'
   ]
-
   const imagesDescMeson = ['Slide 1', 'Slide 2', 'Slide 3']
 
   return (
@@ -56,13 +51,19 @@ function App () {
         titleDesc={t('titleDesc')}
         images={imagesPaseo}
         desc={imagesDescPaseo}
-        url={paseoBookingUrl}
+        url='https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
       />
       <BarSection
         title={t('mesonTitle')}
         titleDesc={t('mesonDesc')}
         images={imagesMeson}
         desc={imagesDescMeson}
+      />
+      <ActivitySection
+        title={t('castleVisitTitle')}
+        titleDesc={[t('castleVisitDescP1'), t('castleVisitDescP2')]}
+        src='/media/activities/castle.jpg'
+        url='https://www.laencinaturismo.com/rutas/visita-guiada-castillo-de-banos-de-la-encina/'
       />
     </section>
   )

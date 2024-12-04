@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ActivitySection ({ title, titleDesc, url, src}) {
+function ActivitySection ({ title, titleDesc, url, src }) {
   return (
     <section className="lg:w-8/12 w-12/12 py-12
                         px-6 my-52 mx-22

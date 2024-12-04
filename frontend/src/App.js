@@ -89,6 +89,12 @@ function App () {
         src='/media/activities/kayak.jpg'
         url='https://www.laencinaturismo.com/rutas/ruta-en-piragua-por-el-rumblar/'
       />
+      <ActivitySection
+        title={t('deerTitle')}
+        titleDesc={[t('deerDesc')]}
+        src='/media/activities/deer.jpg'
+        url='https://www.laencinaturismo.com/rutas/ruta-en-4x4-el-ciervo-en-la-sierra-banusca/'
+      />
     </section>
   )
 }

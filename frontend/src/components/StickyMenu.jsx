@@ -1,20 +1,20 @@
-import React, {useState} from 'react';
-import {Dropdown, Navbar} from 'flowbite-react';
-import {useTranslation} from 'react-i18next';
-import i18next from 'i18next';
+import React, { useState } from 'react'
+import { Dropdown, Navbar } from 'flowbite-react'
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
-function StickyMenu() {
-  const {t} = useTranslation();
+function StickyMenu () {
+  const { t } = useTranslation()
 
   const options = [
     { id: 'es', src: '/media/spain-flag.svg', alt: 'Spanish', idx: 0 },
     { id: 'en', src: '/media/english-flag.svg', alt: 'English', idx: 1 }
-  ];
-  const [lang, setLang] = useState(0);
+  ]
+  const [lang, setLang] = useState(0)
 
-  function changeLang(index) {
-    setLang(index);
-    i18next.changeLanguage(options[index].id);
+  function changeLang (index) {
+    setLang(index)
+    i18next.changeLanguage(options[index].id)
   }
 
   return (
@@ -46,7 +46,7 @@ function StickyMenu() {
         <Navbar.Link href="#">{t('stickyMenu.about')}</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
-  );
+  )
 }
 
-export default StickyMenu;
+export default StickyMenu

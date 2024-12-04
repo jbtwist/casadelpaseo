@@ -1,8 +1,8 @@
-import React from 'react';
-import SlideShow from './SlideShow';
-import CheckAvailability from './CheckAvailability';
+import React from 'react'
+import SlideShow from './SlideShow'
+import CheckAvailability from './CheckAvailability'
 
-function HouseSection({title, titleDesc, images, desc, url}) {
+function HouseSection ({ title, titleDesc, images, desc, url }) {
   return (
     <section className="lg:w-8/12 w-12/12 py-12
                         px-6 my-52 mx-22
@@ -12,10 +12,10 @@ function HouseSection({title, titleDesc, images, desc, url}) {
       <HouseTitleSection title={title} desc={titleDesc} url={url}/>
       <SlideShow images={images} desc={desc}/>
     </section>
-  );
+  )
 }
 
-function HouseTitleSection({title, desc, url}) {
+function HouseTitleSection ({ title, desc, url }) {
   return (
     <section className="py-8 lg:py-12 px-4 lg:px-6
                       bg-gray-100
@@ -44,7 +44,7 @@ function HouseTitleSection({title, desc, url}) {
         {desc}
       </p>
     </section>
-  );
+  )
 }
 
-export default HouseSection;
+export default HouseSection

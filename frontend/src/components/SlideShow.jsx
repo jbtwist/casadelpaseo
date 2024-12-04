@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import {Carousel} from 'flowbite-react';
+import React, { useState } from 'react'
+import { Carousel } from 'flowbite-react'
 
-function SlideShow({id, images, desc}){
-  const [idx, setIdx] = useState(0);
+function SlideShow ({ id, images, desc }) {
+  const [idx, setIdx] = useState(0)
 
-  function onSlideChange(index) {
-    setIdx(index);
+  function onSlideChange (index) {
+    setIdx(index)
   }
 
   return (
@@ -21,7 +21,7 @@ function SlideShow({id, images, desc}){
         <p>{desc[idx]}</p>
       </div>
     </section>
-  );
+  )
 };
 
-export default SlideShow;
+export default SlideShow

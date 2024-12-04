@@ -1,25 +1,25 @@
-import React, {useState} from 'react';
-import {useTranslation} from 'react-i18next';
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-const CheckAvailability = ({url, icon, alt}) => {
-  const {t} = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [iframeSrc, setIframeSrc] = useState('');
+const CheckAvailability = ({ url, icon, alt }) => {
+  const { t } = useTranslation()
+  const [isOpen, setIsOpen] = useState(false)
+  const [iframeSrc, setIframeSrc] = useState('')
 
   const openModal = (url) => {
-    setIframeSrc(url);
-    setIsOpen(true);
-  };
+    setIframeSrc(url)
+    setIsOpen(true)
+  }
   const closeModal = () => {
-    setIsOpen(false);
-    setIframeSrc('');
-  };
+    setIsOpen(false)
+    setIframeSrc('')
+  }
   return (
     <div className='inline-block px-2 py-2'>
       <button
         onClick={(e) => {
-          e.preventDefault();
-          openModal(url);
+          e.preventDefault()
+          openModal(url)
         }}
       >
         <span className='inline-block mr-2'>{t('availability')}</span>
@@ -59,7 +59,7 @@ const CheckAvailability = ({url, icon, alt}) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default CheckAvailability;
+export default CheckAvailability

@@ -1,19 +1,12 @@
 import React from 'react'
 import Section from './components/Section'
 import StickyMenu from './components/stickyMenu'
+import {useTranslation} from 'react-i18next';
 import './App.css'
+import './i18n'
 
 function App () {
-  const titlePaseo = 'La casa del paseo'
-
-  const descPaseo = `La Casa del Paseo es un alojamiento rural con capacidad
-    para 8 personas con una superficie construida de 200 m2 más una superficie
-    ajardinada de 40 m2 y un patio de 80. Dispone de 4 dormitorios, uno en
-    planta baja, dos cuartos de baño completos con ducha, cocina grande
-    totalmente equipada y un gran salón con chimenea de leña.
-    Situada en una zona privilegiada de Baños de la Encina, en un amplio paseo
-    a 50 metros de la ermita del Cristo del Llano que alberga un camarín
-    barroco espectacular.`
+  const {t} = useTranslation();
 
   const imagesPaseo = [
     'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
@@ -39,6 +32,8 @@ function App () {
      eros lorem, sit amet volutpat metus molestie vitae.`
   ]
 
+  const paseoBookingUrl = 'https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
+
   const titleCurro = 'La casa del tito curro'
 
   const descCurro = `Descubre el encanto de nuestra casa rural, un refugio
@@ -52,10 +47,11 @@ function App () {
     <section>
       <StickyMenu/>
       <Section
-        title={titlePaseo}
-        titleDesc={descPaseo}
+        title={t('houseTitle')}
+        titleDesc={t('titleDesc')}
         images={imagesPaseo}
         desc={imagesDescPaseo}
+        url={paseoBookingUrl}
       />
       <Section
         title={titleCurro}

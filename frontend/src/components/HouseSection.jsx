@@ -2,20 +2,20 @@ import React from 'react';
 import SlideShow from './SlideShow';
 import CheckAvailability from './CheckAvailability';
 
-function Section({title, titleDesc, images, desc}) {
+function HouseSection({title, titleDesc, images, desc, url}) {
   return (
     <section className="lg:w-8/12 w-12/12 py-12
                         px-6 my-52 mx-22
                         bg-gray-50
                         place-self-center text-center"
     >
-      <SectionTitle title={title} desc={titleDesc}/>
+      <HouseTitleSection title={title} desc={titleDesc} url={url}/>
       <SlideShow images={images} desc={desc}/>
     </section>
   );
 }
 
-function SectionTitle({title, desc}) {
+function HouseTitleSection({title, desc, url}) {
   return (
     <section className="py-8 lg:py-12 px-4 lg:px-6
                       bg-gray-100
@@ -31,7 +31,7 @@ function SectionTitle({title, desc}) {
         </h2>
         <div className='border-1 border-black rounded bg-white'>
           <CheckAvailability
-            url={'https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'}
+            url={url}
             icon="/media/Booking.svg"
             alt="Check availability at Booking"
           />
@@ -47,4 +47,4 @@ function SectionTitle({title, desc}) {
   );
 }
 
-export default Section;
+export default HouseSection;

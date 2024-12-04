@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
 const CheckAvailability = ({url, icon, alt}) => {
+  const {t} = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [iframeSrc, setIframeSrc] = useState('');
 
@@ -20,7 +22,7 @@ const CheckAvailability = ({url, icon, alt}) => {
           openModal(url);
         }}
       >
-        <span className='inline-block mr-2'>Comprobar Disponibilidad:</span>
+        <span className='inline-block mr-2'>{t('availability')}</span>
         <img className='inline-block size-8'
           src={icon}
           alt={alt}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from './components/Section'
+import HouseSection from './components/HouseSection'
 import StickyMenu from './components/stickyMenu'
 import {useTranslation} from 'react-i18next';
 import './App.css'
@@ -46,14 +46,14 @@ function App () {
   return (
     <section>
       <StickyMenu/>
-      <Section
+      <HouseSection
         title={t('houseTitle')}
         titleDesc={t('titleDesc')}
         images={imagesPaseo}
         desc={imagesDescPaseo}
         url={paseoBookingUrl}
       />
-      <Section
+      <HouseSection
         title={titleCurro}
         titleDesc={descCurro}
         images={imagesPaseo}

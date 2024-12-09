@@ -18,8 +18,8 @@ function StickyMenu () {
   }
 
   return (
-    <Navbar fluid rounded className="sticky top-0 z-50">
-      <Navbar.Brand href="#">
+    <Navbar fluid rounded className="sticky top-0 z-50 bg-white shadow-md">
+      <Navbar.Brand href="#" className="hover:opacity-90">
         <Dropdown
           label={<img src={options[lang].src} alt={options[lang].alt} className="mr-3 h-6 lg:h-9" />}
           dismissOnClick={false}>
@@ -32,14 +32,15 @@ function StickyMenu () {
             </Dropdown.Item>
           ))}
         </Dropdown>
-        <span className="self-center whitespace-nowrap text-xl font-semibold
-                       dark:text-white">
+        <span className="self-center whitespace-nowrap text-xl font-semibold text-[#478942]">
           {t('houseTitle')}
         </span>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>{t('stickyMenu.home')}</Navbar.Link>
+        <Navbar.Link href="#" className="text-[#478942] hover:text-[#386c35]" active>
+          {t('stickyMenu.home')}
+        </Navbar.Link>
         <Navbar.Link href="#">{t('houseTitle')}</Navbar.Link>
         <Navbar.Link href="#">{t('mesonTitle')}</Navbar.Link>
         <Navbar.Link href="#">{t('activities')}</Navbar.Link>

@@ -18,7 +18,7 @@ function StickyMenu () {
   }
 
   return (
-    <Navbar fluid rounded className="sticky top-0 z-50 bg-white shadow-md">
+    <Navbar fluid rounded className="sticky top-0 z-50 bg-white shadow-md" id="stickyMenu">
       <Navbar.Brand href="#" className="hover:opacity-90">
         <Dropdown
           label={<img src={options[lang].src} alt={options[lang].alt} className="mr-3 h-6 lg:h-9" />}

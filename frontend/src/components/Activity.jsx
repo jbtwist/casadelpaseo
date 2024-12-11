@@ -7,9 +7,9 @@ function Activity ({ descCss, title, titleDesc, url, src }) {
   return (
     <section className="py-10 px-8">
       <div className={descCss}>
-        <h2 className={titleCss}>
+        <h3 className={titleCss}>
           <a href={url}>{title}</a>
-        </h2>
+        </h3>
       </div>
       <div>
         {titleDesc.map((description, index) => (

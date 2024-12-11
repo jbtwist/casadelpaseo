@@ -1,5 +1,6 @@
 import React from 'react'
 import Activity from './components/Activity'
+import Restaurant from './components/Restaurant'
 import Section from './components/Section'
 import SlideShow from './components/SlideShow'
 import HouseSection from './components/HouseSection'
@@ -27,7 +28,9 @@ function App () {
     '/media/meson/tarta_queso.jpg'
   ]
 
-  const sectionCss = 'py-10 px-8 lg:w-10/12 w-11/12 py-4 my-4 mx-auto bg-gray-50 shadow-lg rounded-lg place-self-center'
+  const sectionCss = 'w-full py-10 px-4 lg:px-8 lg:w-10/12 w-11/12 py-4 my-4 mx-auto bg-gray-50 shadow-lg rounded-lg place-self-center'
+  const sectionTitleCss = 'text-4xl lg:text-5xl md:text-6xl font-bold text-[#478942] bg-clip-text text-center transition-transform duration-300 hover:scale-110'
+
   return (
     <section>
       <StickyMenu/>
@@ -40,15 +43,19 @@ function App () {
       />
       <Section
         sectionCss={sectionCss}
-        title={t('mesonTitle')}
-        desc={t('mesonDesc')}
+        titleCss={sectionTitleCss}
+        title={t('restaurantTitles')}
       >
+        <Restaurant
+          title={t('mesonTitle')}
+          titleDesc={[t('mesonDesc')]}
+        />
         <SlideShow images={imagesMeson}/>
       </Section>
       <Section
         sectionCss={sectionCss}
-        title="Actividades"
-        desc="Descubre nuestras actividades"
+        titleCss={sectionTitleCss}
+        title={t('activities')}
       >
         <Activity
           title={t('castleVisitTitle')}
@@ -86,5 +93,3 @@ function App () {
 }
 
 export default App
-
-

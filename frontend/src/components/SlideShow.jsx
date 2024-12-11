@@ -8,7 +8,7 @@ function SlideShow ({ images }) {
     setIdx(index)
   }
 
-  const slideShowCss = 'h-64 w-full md:h-80 lg:h-96 xl:h-[30rem] 2xl:h-[35rem] m-3 border-4'
+  const slideShowCss = 'h-64 w-full md:h-80 lg:h-96 xl:h-[30rem] 2xl:h-[35rem] mx-auto my-3 border-4'
 
   return (
     <section id="slideshow" className='flex lg:flex-row flex-col max-w-6xl mx-auto'>

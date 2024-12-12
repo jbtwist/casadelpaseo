@@ -8,19 +8,24 @@ function SlideShow ({ images }) {
     setIdx(index)
   }
 
-  const slideShowCss = 'h-64 w-full md:h-80 lg:h-96 xl:h-[30rem] 2xl:h-[35rem] mx-auto my-3 border-4'
+  const slideShowCss = 'w-full h-[40vh] md:h-[70vh] lg:w-full lg:h-[85vh] mx-auto border-4'
 
   return (
-    <section id="slideshow" className='flex lg:flex-row flex-col max-w-6xl mx-auto'>
+    <section className="w-full">
       <div className={slideShowCss}>
         <Carousel slideInterval={5000} onSlideChange={onSlideChange}>
           {images.map((each, index) => (
-            <img key={index} src={images[index]} alt="picture" className='object-cover w-full h-full'/>
+            <img
+              key={index}
+              src={images[index]}
+              alt="picture"
+              className="object-cover w-full h-full"
+            />
           ))}
         </Carousel>
       </div>
     </section>
   )
-};
+}
 
 export default SlideShow

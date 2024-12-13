@@ -4,7 +4,7 @@ import CheckAvailability from './CheckAvailability'
 import LocationMap from './LocationMap'
 import { useTranslation } from 'react-i18next'
 
-function HouseSection ({ sectionCss, title, titleDesc, images, url }) {
+function HouseSection ({ sectionCss, images, url }) {
   const { t } = useTranslation()
   
   return (

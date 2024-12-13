@@ -37,7 +37,6 @@ function App () {
       <HouseSection
         sectionCss={sectionCss}
         title={t('houseTitle')}
-        titleDesc={t('titleDesc')}
         images={imagesPaseo}
         url='https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
       />

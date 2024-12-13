@@ -6,7 +6,7 @@ function Activity ({ descCss, title, titleDesc, url, src }) {
   const titleDescCss = 'mt-6 text-gray-700 text-lg lg:text-base leading-relaxed text-left'
   
   return (
-    <section className="py-10 px-4 lg:px-8 ">
+    <section className="py-10 px-4 lg:px-8">
       <div className={descCss}>
         <h3 className={titleCss}>
           <a href={url}>{title}</a>

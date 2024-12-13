@@ -8,7 +8,7 @@ function HouseSection ({ sectionCss, title, titleDesc, images, url }) {
   const { t } = useTranslation()
   
   return (
-    <section className={sectionCss}>
+    <section className={sectionCss} id="house-section">
       <div className="space-y-8 px-4 lg:px-2">
         <SlideShow images={images}/>
       </div>

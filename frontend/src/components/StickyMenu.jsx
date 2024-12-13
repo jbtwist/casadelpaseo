@@ -42,10 +42,9 @@ function StickyMenu () {
           {t('stickyMenu.home')}
         </Navbar.Link>
         <Navbar.Link href="#">{t('houseTitle')}</Navbar.Link>
-        <Navbar.Link href="#">{t('mesonTitle')}</Navbar.Link>
+        <Navbar.Link href="#">{t('restaurantTitles')}</Navbar.Link>
         <Navbar.Link href="#">{t('activities')}</Navbar.Link>
         <Navbar.Link href="#">{t('stickyMenu.contact')}</Navbar.Link>
-        <Navbar.Link href="#">{t('stickyMenu.about')}</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )

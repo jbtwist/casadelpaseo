@@ -42,6 +42,7 @@ function App () {
         url='https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
       />
       <Section
+        id='restaurant-section'
         sectionCss={sectionCss}
         titleCss={sectionTitleCss}
         title={t('restaurantTitles')}
@@ -53,6 +54,7 @@ function App () {
         <SlideShow images={imagesMeson}/>
       </Section>
       <Section
+        id='activities-section'
         sectionCss={sectionCss}
         titleCss={sectionTitleCss}
         title={t('activities')}

@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Section ({ sectionCss, titleCss, children, title, desc }) {
-  // const divCss = 'py-10 px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-8'
+function Section ({ id, sectionCss, titleCss, children, title, desc }) {
   const divCss = 'w-full py-10 px-4 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-8'
 
   return (
-    <section className={sectionCss}>
+    <section className={sectionCss} id={id}>
       <div className={divCss}>
         <div className='w-full'>
           <h1 className={titleCss}>{title}</h1>

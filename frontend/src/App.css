@@ -23,6 +23,10 @@
   background-color: #f8f8f8 !important;
 }
 
+#stickyMenu a:hover {
+  color: #2A5327 !important;
+}
+
 @media screen and (max-width: 640px) {
     #stickyMenu ul li a {
         background-color: #f8f8f8 !important;

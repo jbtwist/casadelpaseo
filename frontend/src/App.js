@@ -5,6 +5,7 @@ import Section from './components/Section'
 import SlideShow from './components/SlideShow'
 import HouseSection from './components/HouseSection'
 import StickyMenu from './components/StickyMenu'
+import Footer from './components/Footer'
 import { useTranslation } from 'react-i18next'
 import './App.css'
 import './i18n'
@@ -41,7 +42,7 @@ function App () {
         url='https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
       />
       <Section
-        id='restaurant-section'
+        id='restaurant'
         sectionCss={sectionCss}
         titleCss={sectionTitleCss}
         title={t('restaurantTitles')}
@@ -53,7 +54,7 @@ function App () {
         <SlideShow images={imagesMeson}/>
       </Section>
       <Section
-        id='activities-section'
+        id='activities'
         sectionCss={sectionCss}
         titleCss={sectionTitleCss}
         title={t('activities')}
@@ -89,6 +90,7 @@ function App () {
           url='https://www.laencinaturismo.com/rutas/ruta-en-piragua-por-el-rumblar/'
         />
       </Section>
+      <Footer/>
     </section>
   )
 }

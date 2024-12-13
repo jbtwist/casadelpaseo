@@ -1,9 +1,10 @@
 {
     "stickyMenu": {
         "home": "Home",
-        "contact": "Contact",
-        "about": "About us"
+        "contact": "Contact Us",
+        "about": "About"
     },
+    "villageWebsite": "Baños de la Encina official website",
     "availability": "Check availability:",
     "houseTitle": "La casa del paseo",
     "visitUs": "Visit us on Booking.com",

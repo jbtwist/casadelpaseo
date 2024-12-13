@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Section ({ id, sectionCss, titleCss, children, title, desc }) {
+function Section ({ id, sectionCss, titleCss, children, title }) {
   const divCss = 'w-full py-10 px-4 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-8'
 
   return (

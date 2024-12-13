@@ -12,7 +12,7 @@ function StickyMenu () {
   ]
 
   const [lang, setLang] = useState(0)
-  const [activeSection, setActiveSection] = useState('house-section')
+  const [activeSection, setActiveSection] = useState('house')
 
   function changeLang (index) {
     setLang(index)
@@ -51,7 +51,7 @@ function StickyMenu () {
 
   return (
     <Navbar fluid rounded className="sticky top-0 z-50 bg-white shadow-md" id="stickyMenu">
-      <Navbar.Brand href="#house-section" className="hover:opacity-90">
+      <Navbar.Brand href="#house" className="hover:opacity-90">
         <Dropdown
           label={<img src={options[lang].src} alt={options[lang].alt} className="mr-3 h-6 lg:h-9" />}
           dismissOnClick={false}>
@@ -71,25 +71,32 @@ function StickyMenu () {
       <Navbar.Toggle />
       <Navbar.Collapse>
         <Navbar.Link
-          href="#house-section"
-          onClick={(e) => scrollToSection(e, 'house-section')}
-          className={`${activeSection === 'house-section' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
+          href="#house"
+          onClick={(e) => scrollToSection(e, 'house')}
+          className={`${activeSection === 'house' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
         >
           <span className="text-xl">{t('houseTitle')}</span>
         </Navbar.Link>
         <Navbar.Link
-          href="#restaurant-section"
-          onClick={(e) => scrollToSection(e, 'restaurant-section')}
-          className={`${activeSection === 'restaurant-section' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
+          href="#restaurant"
+          onClick={(e) => scrollToSection(e, 'restaurant')}
+          className={`${activeSection === 'restaurant' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
         >
           <span className="text-xl">{t('restaurantTitles')}</span>
         </Navbar.Link>
         <Navbar.Link
-          href="#activities-section"
-          onClick={(e) => scrollToSection(e, 'activities-section')}
-          className={`${activeSection === 'activities-section' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
+          href="#activities"
+          onClick={(e) => scrollToSection(e, 'activities')}
+          className={`${activeSection === 'activities' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
         >
           <span className="text-xl">{t('activities')}</span>
+        </Navbar.Link>
+        <Navbar.Link
+          href="#about-us"
+          onClick={(e) => scrollToSection(e, 'about-us')}
+          className={`${activeSection === 'about-us' ? 'active text-[#2A5327] font-bold' : 'text-[#478942]'}`}
+        >
+          <span className="text-xl">{t('stickyMenu.about')}</span>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

@@ -17,6 +17,7 @@ const CheckAvailability = ({ url, icon, alt }) => {
   return (
     <div className='inline-block px-2 py-2'>
       <button
+        className='inline-block border-2 border-[#478942] mt-6 lg:mt-4 md:mt-2 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors'
         onClick={(e) => {
           e.preventDefault()
           openModal(url)

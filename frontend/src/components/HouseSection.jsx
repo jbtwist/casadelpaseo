@@ -17,7 +17,7 @@ function HouseSection ({ sectionCss, images, url }) {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Booking section */}
           <div className="w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto bg-white shadow-md p-6 lg:p-4 md:p-2">
-            <div className="bg-gray-50 rounded-lg p-6 lg:p-4 md:p-2">
+            <div className="rounded-lg p-6 lg:p-4 md:p-2">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <h3 className="text-lg font-semibold">{t('visitUs')}</h3>
                 <CheckAvailability
@@ -27,7 +27,7 @@ function HouseSection ({ sectionCss, images, url }) {
                 />
               </div>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 lg:p-4 md:p-2 mt-6 lg:mt-4 md:mt-2">
+            <div className="rounded-lg p-6 lg:p-4 md:p-2 mt-6 lg:mt-4 md:mt-2">
               <p className="text-base">{t('contactUs')}</p>
               <ul className="list-disc list-inside space-y-2 mt-4 ml-2">
                 <li>{t('betterPrices')}</li>

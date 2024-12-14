@@ -29,22 +29,15 @@ function App () {
     '/media/meson/tarta_queso.jpg'
   ]
 
-  const sectionCss = 'w-full py-10 px-4 lg:px-8 lg:w-10/12 w-11/12 py-4 my-4 mx-auto bg-gray-50 shadow-lg rounded-lg place-self-center'
-  const sectionTitleCss = 'text-4xl lg:text-5xl md:text-6xl font-bold text-[#478942] bg-clip-text text-center transition-transform duration-300 hover:scale-110'
-
   return (
     <section>
       <StickyMenu/>
       <HouseSection
-        sectionCss={sectionCss}
-        title={t('houseTitle')}
         images={imagesPaseo}
         url='https://www.booking.com/hotel/es/la-casa-del-paseo.es.html'
       />
       <Section
         id='restaurant'
-        sectionCss={sectionCss}
-        titleCss={sectionTitleCss}
         title={t('restaurantTitles')}
       >
         <Restaurant
@@ -55,8 +48,6 @@ function App () {
       </Section>
       <Section
         id='activities'
-        sectionCss={sectionCss}
-        titleCss={sectionTitleCss}
         title={t('activities')}
       >
         <Activity

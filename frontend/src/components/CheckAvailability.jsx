@@ -53,7 +53,7 @@ const CheckAvailability = ({ url, icon, alt }) => {
               src={iframeSrc}
               title='Embedded Website'
               className='w-full h-full'
-              sandbox='allow-scripts allow-same-origin'
+              sandbox='allow-scripts allow-forms allow-popups'
             ></iframe>
           </div>
         </div>

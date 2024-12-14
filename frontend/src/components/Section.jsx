@@ -1,16 +1,15 @@
 import React from 'react'
+import { styles } from '../index'
 
-function Section ({ id, sectionCss, titleCss, children, title }) {
-  const divCss = 'w-full py-10 px-4 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-8'
-
+function Section ({ id, children, title }) {
   return (
-    <section className={sectionCss} id={id}>
-      <div className={divCss}>
+    <section className={styles.section.container} id={id}>
+      <div className={styles.section.header}>
         <div className='w-full'>
-          <h1 className={titleCss}>{title}</h1>
+          <h1 className={styles.section.title}>{title}</h1>
         </div>
       </div>
-      <div className="space-y-8 px-4 lg:px-8">
+      <div className="my-8 px-4 lg:px-8">
         {children}
       </div>
     </section>

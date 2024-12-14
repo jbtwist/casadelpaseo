@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { styles } from '../index'
 
 const CheckAvailability = ({ url, icon, alt }) => {
   const { t } = useTranslation()
@@ -17,7 +18,7 @@ const CheckAvailability = ({ url, icon, alt }) => {
   return (
     <div className='inline-block px-2 py-2'>
       <button
-        className='inline-block border-2 border-[#478942] mt-6 lg:mt-4 md:mt-2 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors'
+        className={styles.checkAvailability.button}
         onClick={(e) => {
           e.preventDefault()
           openModal(url)
@@ -31,21 +32,11 @@ const CheckAvailability = ({ url, icon, alt }) => {
       </button>
       {/* Modal */}
       {isOpen && (
-        <div className='
-          fixed inset-0
-          bg-black bg-opacity-50
-          flex items-center justify-center
-          z-50'
-          onClick={closeModal}
-        >
-          <div className='
-          bg-white p-6 rounded shadow-lg
-          w-full max-w-6xl h-3/4
-          overflow-hidden relative'
-          >
+        <div className={styles.checkAvailability.modal.container} onClick={closeModal}>
+          <div className={styles.checkAvailability.modal.content}>
             <button
               onClick={closeModal}
-              className='absolute top-2 right-2 text-red-500 hover:text-red-700'
+              className={styles.checkAvailability.modal.closeButton}
             >
               &times;
             </button>

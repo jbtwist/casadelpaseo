@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Dropdown, Navbar } from 'flowbite-react'
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
+import { styles } from '../index'
 
 function StickyMenu () {
   const { t } = useTranslation()
@@ -50,7 +51,7 @@ function StickyMenu () {
   }, [])
 
   return (
-    <Navbar fluid rounded className="sticky top-0 z-50 bg-white shadow-md" id="stickyMenu">
+    <Navbar fluid rounded className={styles.stickyMenu.navbar} id="stickyMenu">
       <Navbar.Brand href="#house" className="hover:opacity-90">
         <Dropdown
           label={<img src={options[lang].src} alt={options[lang].alt} className="mr-3 h-6 lg:h-9" />}
@@ -64,7 +65,7 @@ function StickyMenu () {
             </Dropdown.Item>
           ))}
         </Dropdown>
-        <span className="self-center whitespace-nowrap text-xl font-semibold text-[#478942]">
+        <span className={styles.stickyMenu.span}>
           {t('houseTitle')}
         </span>
       </Navbar.Brand>

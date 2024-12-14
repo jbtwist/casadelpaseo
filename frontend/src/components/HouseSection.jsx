@@ -3,12 +3,12 @@ import SlideShow from './SlideShow'
 import CheckAvailability from './CheckAvailability'
 import LocationMap from './LocationMap'
 import { useTranslation } from 'react-i18next'
+import { styles } from '../index'
 
-function HouseSection ({ sectionCss, images, url }) {
+function HouseSection ({ images, url }) {
   const { t } = useTranslation()
-  
   return (
-    <section className={sectionCss} id="house">
+    <section className={styles.section.container} id="house">
       <div className="space-y-8 px-4 lg:px-2">
         <SlideShow images={images}/>
       </div>
@@ -16,7 +16,7 @@ function HouseSection ({ sectionCss, images, url }) {
       <div className="w-full px-4 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Booking section */}
-          <div className="w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto bg-white shadow-md p-6 lg:p-4 md:p-2">
+          <div className={styles.houseSection.bookingSection}>
             <div className="rounded-lg p-6 lg:p-4 md:p-2">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <h3 className="text-lg font-semibold">{t('visitUs')}</h3>
@@ -43,7 +43,7 @@ function HouseSection ({ sectionCss, images, url }) {
           </div>
 
           {/* Map section */}
-          <div className="w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto border border-[#478942] rounded-lg overflow-hidden shadow-md">
+          <div className={styles.houseSection.mapSection}>
             <LocationMap />
           </div>
         </div>

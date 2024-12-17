@@ -29,17 +29,25 @@ export const styles = {
   houseSection: {
     bookingSection: 'w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto bg-white shadow-md p-6 lg:p-4 md:p-2',
     bookingButton: 'inline-block mt-6 lg:mt-4 md:mt-2 bg-[#478942] text-white px-6 py-2 rounded-lg hover:bg-[#386c35] transition-colors',
-    mapSection: 'w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto rounded-lg overflow-hidden shadow-md'
+    mapSection: 'w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto rounded-lg overflow-hidden shadow-md',
+    slides: {
+      text: 'text-xs landscape:text-sm sm:text-sm sm:landscape:text-base md:text-base md:landscape:text-lg lg:text-lg lg:landscape:text-3xl font-medium sm:font-bold',
+      slide1: `top-[0%] left-1/2 -translate-x-1/2 sm:top-[5%] sm:left-[5%] sm:translate-x-0 xl:top-[10%] xl:left-[5%] xl:translate-x-0
+               absolute inset-0 w-max h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`,
+      slide2: `top-[20%] left-[80%] max-w[150px] sm:max-w-[200px] lg:max-w-[300px] whitespace-normal -translate-x-1/2
+               absolute inset-0 h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`,
+      slide3: `top-[65%] left-1/2 -translate-x-1/2 max-w[150px] sm:max-w-[200px] lg:max-w-[300px] xl:max-w-[400px] 2xl:max-w-[500px] whitespace-normal -translate-x-1/2
+               absolute inset-0 h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`
+    }
   },
   slideShow: {
-    carousel: 'w-full h-[40vh] md:h-[70vh] lg:w-full lg:h-[85vh] mx-auto'
+    carousel: 'aspect-[16/9] w-full portrait:h-[288px] landscape:h-[360px] portrait:sm:h-[432px] landscape:sm:h-[480px] portrait:md:h-[576px] landscape:md:h-[720px] portrait:lg:h-[720px] landscape:lg:h-[864px] xl:h-[864px] mx-auto'
   },
   stickyMenu: {
     span: 'self-center whitespace-nowrap text-xl font-semibold text-[#478942]',
     navbar: 'sticky top-0 z-50 bg-white shadow-md'
   }
 }
-
 
 root.render(
     <React.StrictMode>

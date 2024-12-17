@@ -1,5 +1,5 @@
 import React from 'react'
-import SlideShow from './SlideShow'
+import HouseCarousel from './HouseCarousel'
 import CheckAvailability from './CheckAvailability'
 import LocationMap from './LocationMap'
 import { useTranslation } from 'react-i18next'
@@ -8,10 +8,11 @@ import { styles } from '../index'
 function HouseSection ({ images, url }) {
   const { t } = useTranslation()
   return (
-    <section className={styles.section.container} id="house">
-      <div className="space-y-8 px-4 lg:px-2">
-        <SlideShow images={images}/>
+    <>
+      <div id="house" className="w-full aspect-[16/9]">
+        <HouseCarousel/>
       </div>
+    <section className={styles.section.container}>
       {/* Info section */}
       <div className="w-full px-4 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -49,6 +50,7 @@ function HouseSection ({ images, url }) {
         </div>
       </div>
     </section>
+  </>
   )
 }
 

@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import { Dropdown, Navbar } from 'flowbite-react'
 import { useTranslation } from 'react-i18next'
-import i18next from 'i18next'
 import { styles } from '../index'
+import { withTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 function StickyMenu () {
   const { t } = useTranslation()
+  const { i18n } = useTranslation()
+  const defaultLanguage = i18n.language
 
   const options = [
     { id: 'es', src: '/media/spain-flag.svg', alt: 'Spanish', idx: 0 },
     { id: 'en', src: '/media/english-flag.svg', alt: 'English', idx: 1 }
   ]
 
-  const [lang, setLang] = useState(0)
+  const [lang, setLang] = useState(options.findIndex(option => option.id === defaultLanguage))
   const [activeSection, setActiveSection] = useState('house')
 
   function changeLang (index) {

@@ -31,12 +31,14 @@ export const styles = {
     bookingButton: 'inline-block mt-6 lg:mt-4 md:mt-2 bg-[#478942] text-white px-6 py-2 rounded-lg hover:bg-[#386c35] transition-colors',
     mapSection: 'w-full h-[300px] landscape:h-[250px] portrait:h-[300px] sm:landscape:h-[280px] sm:h-[300px] sm:portrait:h-[320px] md:h-[350px] md:landscape:h-[300px] md:w-[65vw] md:portrait:h-[380px] landscape:lg:w-1/2 landscape:lg:h-[420px]  mx-auto rounded-lg overflow-hidden shadow-md',
     slides: {
-      text: 'text-xs landscape:text-sm sm:text-sm sm:landscape:text-base md:text-base md:landscape:text-lg lg:text-lg lg:landscape:text-3xl font-medium sm:font-bold',
-      slide1: `top-[0%] left-1/2 -translate-x-1/2 sm:top-[5%] sm:left-[5%] sm:translate-x-0 xl:top-[10%] xl:left-[5%] xl:translate-x-0
+      text: 'text-xs landscape:text-sm sm:text-sm sm:landscape:text-base md:text-base md:landscape:text-lg lg:text-3xl lg:landscape:text-4xl font-medium sm:font-bold lg:font-extrabold',
+      slide1: `top-[5%] left-[5%] translate-x-0 sm:top-[5%] sm:left-[5%] sm:translate-x-0 xl:top-[10%] xl:left-[5%] xl:translate-x-0
                absolute inset-0 w-max h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`,
       slide2: `top-[20%] left-[80%] max-w[150px] sm:max-w-[200px] lg:max-w-[300px] whitespace-normal -translate-x-1/2
                absolute inset-0 h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`,
       slide3: `top-[65%] left-1/2 -translate-x-1/2 max-w[150px] sm:max-w-[200px] lg:max-w-[300px] xl:max-w-[400px] 2xl:max-w-[500px] whitespace-normal -translate-x-1/2
+               absolute inset-0 h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`,
+      slide4: `top-[65%] left-1/2 -translate-x-1/2 max-w[100px] sm:max-w-[150px] lg:max-w-[200px] xl:max-w-[300px] 2xl:max-w-[400px] whitespace-normal -translate-x-1/2
                absolute inset-0 h-fit text-center text-white rounded-lg text-shadow-[2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]`
     }
   },

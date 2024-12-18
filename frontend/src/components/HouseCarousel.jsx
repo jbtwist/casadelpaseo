@@ -23,68 +23,68 @@ function HouseCarousel () {
   ]
   return (
     <Carousel slide={false}>
-        {/* Slide 1 */}
-        <div>
-            <img
-                src='/media/casadelpaseo/1.jpg'
-                alt="picture"
-                className="object-cover w-full h-full object-contain"
-            />
-            <div className={styles.houseSection.slides.slide1}>
-                <p className={styles.houseSection.slides.text}>
-                {t('paseoDesc1')}
-                </p>
-            </div>
+      {/* Slide 1 */}
+      <div>
+        <img
+          src='/media/casadelpaseo/1.jpg'
+          alt="picture"
+          className="object-cover w-full h-full object-contain"
+        />
+        <div className={styles.houseSection.slides.slide1}>
+          <p className={styles.houseSection.slides.text}>
+            {t('paseoDesc1')}
+          </p>
         </div>
-        {/* Slide 2 */}
-        <div>
-            <img
-                src='/media/casadelpaseo/2.jpg'
-                alt="picture"
-                className="object-cover w-full h-full object-contain"
-            />
-            <div className={styles.houseSection.slides.slide2}>
-                <p className={styles.houseSection.slides.text}>
-                {t('paseoDesc2')}
-                </p>
-            </div>
+      </div>
+      {/* Slide 2 */}
+      <div>
+        <img
+          src='/media/casadelpaseo/2.jpg'
+          alt="picture"
+          className="object-cover w-full h-full object-contain"
+        />
+        <div className={styles.houseSection.slides.slide2}>
+          <p className={styles.houseSection.slides.text}>
+            {t('paseoDesc2')}
+          </p>
         </div>
-        {/* Slide 3 */}
-        <div>
-            <img
-                src='/media/casadelpaseo/3.jpg'
-                alt="picture"
-                className="object-cover w-full h-full object-contain"
-            />
-            <div className={styles.houseSection.slides.slide3}>
-                <p className={styles.houseSection.slides.text}>
-                {t('paseoDesc3')}
-                </p>
-            </div>
+      </div>
+      {/* Slide 3 */}
+      <div>
+        <img
+          src='/media/casadelpaseo/3.jpg'
+          alt="picture"
+          className="object-cover w-full h-full object-contain"
+        />
+        <div className={styles.houseSection.slides.slide3}>
+          <p className={styles.houseSection.slides.text}>
+            {t('paseoDesc3')}
+          </p>
         </div>
-        {/* Slide 4 */}
-        <div>
-            <img
-                src='/media/casadelpaseo/4.jpg'
-                alt="picture"
-                className="object-cover w-full h-full object-contain"
-            />
-            <div className={styles.houseSection.slides.slide3}>
-                <p className="text-xs landscape:text-sm sm:text-sm sm:landscape:text-base md:text-base md:landscape:text-lg lg:text-lg lg:landscape:text-3xl font-medium sm:font-bold">
-                {t('paseoDesc4')}
-                </p>
-            </div>
+      </div>
+      {/* Slide 4 */}
+      <div>
+        <img
+          src='/media/casadelpaseo/4.jpg'
+          alt="picture"
+          className="object-cover w-full h-full object-contain"
+        />
+        <div className={styles.houseSection.slides.slide4}>
+          <p className={styles.houseSection.slides.text}>
+            {t('paseoDesc4')}
+          </p>
         </div>
-        {/* Slide 5 onwards */}
-        {images.map((image, index) => (
-            <div key={index}>
-                <img
-                    src={image}
-                alt="picture"
-                className="object-cover w-full h-full object-contain"
-            />
-            </div>
-        ))}
+      </div>
+      {/* Slide 5 onwards */}
+      {images.map((image, index) => (
+        <div key={index}>
+          <img
+            src={image}
+            alt="picture"
+            className="object-cover w-full h-full object-contain"
+          />
+        </div>
+      ))}
     </Carousel>
   )
 }

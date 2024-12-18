@@ -18,9 +18,9 @@ function HouseSection ({ images, url }) {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Booking section */}
           <div className={styles.houseSection.bookingSection}>
-            <div className="rounded-lg p-6 lg:p-4 md:p-2">
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <h3 className="text-lg font-semibold">{t('visitUs')}</h3>
+            <div className="p-3 portrait:p-4 landscape:p-3 sm:p-4 md:p-3 lg:p-4">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-base portrait:text-lg landscape:text-base sm:text-lg md:text-xl font-bold">{t('visitUs')}</h3>
                 <CheckAvailability
                   url={url}
                   icon="/media/Booking.svg"
@@ -28,9 +28,9 @@ function HouseSection ({ images, url }) {
                 />
               </div>
             </div>
-            <div className="rounded-lg p-6 lg:p-4 md:p-2 mt-6 lg:mt-4 md:mt-2">
+            <div className="rounded-lg p-3 portrait:p-4 sm:p-4 md:p-3 lg:p-4 mt-3 portrait:mt-4 sm:mt-4 md:mt-3 lg:mt-4">
               <p className="text-base">{t('contactUs')}</p>
-              <ul className="list-disc list-inside space-y-2 mt-4 ml-2">
+              <ul className="list-disc list-inside space-y-1 portrait:space-y-2 mt-2 portrait:mt-3 ml-2">
                 <li>{t('betterPrices')}</li>
                 <li>{t('personalAttention')}</li>
               </ul>

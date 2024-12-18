@@ -19,7 +19,7 @@ export const styles = {
     header: 'w-full py-10 px-4 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-8'
   },
   checkAvailability: {
-    button: 'inline-block border-2 border-[#478942] mt-6 lg:mt-4 md:mt-2 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors',
+    button: 'inline-flex items-center justify-center border-2 border-[#478942] my-auto bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors h-fit',
     modal: {
       container: 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50',
       content: 'bg-white p-6 rounded shadow-lg w-full max-w-6xl h-3/4 overflow-hidden relative',
@@ -29,7 +29,7 @@ export const styles = {
   houseSection: {
     bookingSection: 'w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto bg-white shadow-md p-6 lg:p-4 md:p-2',
     bookingButton: 'inline-block mt-6 lg:mt-4 md:mt-2 bg-[#478942] text-white px-6 py-2 rounded-lg hover:bg-[#386c35] transition-colors',
-    mapSection: 'w-full h-[420px] lg:w-1/2 lg:h-[420px] md:w-[65vw] md:h-[300px] mx-auto rounded-lg overflow-hidden shadow-md',
+    mapSection: 'w-full h-[300px] landscape:h-[250px] portrait:h-[300px] sm:landscape:h-[280px] sm:h-[300px] sm:portrait:h-[320px] md:h-[350px] md:landscape:h-[300px] md:w-[65vw] md:portrait:h-[380px] landscape:lg:w-1/2 landscape:lg:h-[420px]  mx-auto rounded-lg overflow-hidden shadow-md',
     slides: {
       text: 'text-xs landscape:text-sm sm:text-sm sm:landscape:text-base md:text-base md:landscape:text-lg lg:text-lg lg:landscape:text-3xl font-medium sm:font-bold',
       slide1: `top-[0%] left-1/2 -translate-x-1/2 sm:top-[5%] sm:left-[5%] sm:translate-x-0 xl:top-[10%] xl:left-[5%] xl:translate-x-0

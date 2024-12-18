@@ -16,7 +16,7 @@ const CheckAvailability = ({ url, icon, alt }) => {
     setIframeSrc('')
   }
   return (
-    <div className='inline-block px-2 py-2'>
+    <div className='flex flex-col items-stretch gap-4'>
       <button
         className={styles.checkAvailability.button}
         onClick={(e) => {

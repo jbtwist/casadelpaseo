@@ -1,10 +1,10 @@
 import React from 'react'
 import { styles } from '../index'
 
-function Activity ({ descCss, title, titleDesc, url, src }) {
+function Activity ({ title, titleDesc, url, src }) {
   return (
     <section className="py-10 px-4 lg:px-8">
-      <div className={descCss}>
+      <div>
         <h3 className={styles.title}>
           <a href={url}>{title}</a>
         </h3>

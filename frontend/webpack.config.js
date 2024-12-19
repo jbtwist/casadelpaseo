@@ -2,7 +2,7 @@ const path = require('path')
 
 const config = {
 
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build/static/dist'),
@@ -11,7 +11,8 @@ const config = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  watch: true,
+  watch: false,
+  stats: 'errors-only',
   cache: false,
   module: {
     rules: [

@@ -10,12 +10,12 @@ i18n
   .init({
     fallbackLng: 'en',
     supportedLngs: ['en', 'es'],
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/translation.json',
     },
   });
 

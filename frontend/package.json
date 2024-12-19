@@ -19,8 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "python -m flask --app ../backend/app.py run",
-    "build": "npx tailwind -i ./src/App.css -o ./build/static/css/output.css && npx webpack build && python -m flask --app ../backend/app.py run",
+    "start": "react-scripts start",
+    "build": "npx tailwind -i ./src/App.css -o ./build/static/css/output.css && npx webpack build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

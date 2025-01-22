@@ -14,13 +14,15 @@ function App() {
 
   const imagesMeson = [
     process.env.PUBLIC_URL + "/media/meson/icon.jpg",
-    process.env.PUBLIC_URL + "/media/meson/principal.jpg",
-    process.env.PUBLIC_URL + "/media/meson/flamenquin.jpg",
-    process.env.PUBLIC_URL + "/media/meson/escalopin.jpg",
-    process.env.PUBLIC_URL + "/media/meson/cucharro.jpg",
-    process.env.PUBLIC_URL + "/media/meson/gambas.jpg",
-    process.env.PUBLIC_URL + "/media/meson/huevos.jpg",
-    process.env.PUBLIC_URL + "/media/meson/tarta_queso.jpg",
+    process.env.PUBLIC_URL + "/media/meson/outside.jpg",
+    process.env.PUBLIC_URL + "/media/meson/inside.jpg",
+    process.env.PUBLIC_URL + "/media/meson/cheese.jpg",
+    process.env.PUBLIC_URL + "/media/meson/breadcrumbs.jpg",
+    process.env.PUBLIC_URL + "/media/meson/lomo.jpg",
+    process.env.PUBLIC_URL + "/media/meson/skewers.jpg",
+    process.env.PUBLIC_URL + "/media/meson/eggs.jpg",
+    process.env.PUBLIC_URL + "/media/meson/ochios.jpg",
+    process.env.PUBLIC_URL + "/media/meson/flamenquin.jpg"
   ];
 
   return (

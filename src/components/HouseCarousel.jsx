@@ -5,19 +5,22 @@ import { useTranslation } from "react-i18next";
 function HouseCarousel() {
   const { t } = useTranslation();
   const images = [
-    process.env.PUBLIC_URL + "/media/house/1.jpg",
-    process.env.PUBLIC_URL + "/media/house/2.jpg",
-    process.env.PUBLIC_URL + "/media/house/3.jpg",
-    process.env.PUBLIC_URL + "/media/house/4.jpg",
-    process.env.PUBLIC_URL + "/media/house/5.jpg",
-    process.env.PUBLIC_URL + "/media/house/6.jpg",
-    process.env.PUBLIC_URL + "/media/house/7.jpg",
-    process.env.PUBLIC_URL + "/media/house/8.jpg",
-    process.env.PUBLIC_URL + "/media/house/9.jpg",
-    process.env.PUBLIC_URL + "/media/house/10.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/5.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/6.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/7.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/8.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/9.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/10.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/11.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/12.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/13.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/14.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/15.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/16.jpg",
+    process.env.PUBLIC_URL + "/media/casadelpaseo/17.jpg"
   ];
   return (
-    <Carousel slide={false}>
+    <Carousel slideInterval={3000}>
       {/* Slide 1 */}
       <div>
         <img
@@ -86,7 +89,7 @@ function HouseCarousel() {
       {images.map((image, index) => (
         <div key={index}>
           <img
-            src={image}
+            src={images[index]}
             alt={t("paseoDesc5")}
             className="object-cover w-full h-full object-contain"
           />

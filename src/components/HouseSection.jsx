@@ -4,7 +4,7 @@ import CheckAvailability from "./CheckAvailability";
 import LocationMap from "./LocationMap";
 import { useTranslation } from "react-i18next";
 
-function HouseSection({ images, url }) {
+function HouseSection() {
   const { t } = useTranslation();
   return (
     <>
@@ -26,7 +26,6 @@ function HouseSection({ images, url }) {
                     {t("visitUs")}
                   </h3>
                   <CheckAvailability
-                    url={url}
                     icon="/media/Booking.svg"
                     alt="Check availability at Booking"
                   />

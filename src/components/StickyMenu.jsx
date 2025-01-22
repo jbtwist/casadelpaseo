@@ -28,7 +28,7 @@ function StickyMenu() {
     e.preventDefault();
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80; // approximate height of the menu
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
@@ -55,9 +55,9 @@ function StickyMenu() {
         return;
       }
       let currentSection = null;
+      // Check if the point is in any of the sections
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        // Si el punto de control está dentro de los límites de la sección
         if (rect.top <= checkPoint && rect.bottom >= checkPoint) {
           currentSection = section.id;
         }

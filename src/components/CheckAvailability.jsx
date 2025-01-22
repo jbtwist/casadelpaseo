@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const CheckAvailability = ({ url, icon, alt }) => {
+const CheckAvailability = ({ icon, alt }) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [iframeSrc, setIframeSrc] = useState("");
+  const [iframeSrc, setIframeSrc] = useState("");  
 
   const openModal = (url) => {
     setIframeSrc(url);
@@ -20,7 +20,7 @@ const CheckAvailability = ({ url, icon, alt }) => {
         className="inline-flex items-center justify-center border-2 border-[#478942] my-auto bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors h-fit"
         onClick={(e) => {
           e.preventDefault();
-          openModal(url);
+          openModal('https://www.booking.com/hotel/es/la-casa-del-paseo.es.html');
         }}
       >
         <span className="inline-block mr-2">{t("availability")}</span>
